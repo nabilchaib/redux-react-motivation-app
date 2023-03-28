@@ -8,7 +8,7 @@ const CurrentWeather = () => {
     useEffect(() => {
         const fetchWeather = async () => {
             const response = await fetch(
-                `${WEATHER_API_URL}/current.json?key=${WEATHER_API_KEY}&q=Québec`
+                `${WEATHER_API_URL}/current.json?key=${WEATHER_API_KEY}&q=Quebec`
             );
             const data = await response.json();
 
