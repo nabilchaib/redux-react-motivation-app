@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/main.css';
+import DisplayTodos from './components/Todos/DisplayTodos';
+import Todos from './components/Todos/Todos';
+import CurrentWeather from './components/Weather/Weather';
+import { motion } from 'framer-motion';
+import Quote from './components/Quote/Quote';
+import BgImg from './components/BgImg/BgImg';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BgImg/>
+      <CurrentWeather />
+      <motion.h1
+        whileHover={{ scale: 1.1 }}
+
+      >Daily Motivation
+      </motion.h1>
+      <Quote />
+      <Todos />
+      <DisplayTodos />
     </div>
   );
 }

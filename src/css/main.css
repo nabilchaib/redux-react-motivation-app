@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+/* Reset default styles and set global styles */
+:root {
+    --color-primary: #0981D1;
+    --color-secondary: #1e3f5a;
+    --color-text: #fff;
+    --font-primary: 'PT Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1;
+}
+
+body {
+    background: linear-gradient(190deg,
+    var(--color-primary) 0%,
+            var(--color-secondary) 100%);
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #222;
+    overflow: auto;
+}
+
+.App{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+  }
+
+.Quote {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem;
+    color: #e1edbf;
+    text-shadow: 0 0 5px #1e3f5a, 3px -1px 5px #271c6c
+}
+.App h1 {
+    display: table-header-group;
+    text-align: center;
+    margin: 2rem;
+    color: #e1edbf;
+    
+    text-shadow: 0 0 5px #1e3f5a, 3px -1px 5px #271c6c
+}
+
+/* Todos */
+.addTodos {
+    display: flex;
+    justify-content: center;
+}
+
+.todo-input {
+    min-width: 15rem;
+    width: 40vw;
+
+    max-height: 2.5rem;
+    background-color: #e1edbf;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+
+    align-self: center;
+}
+
+.todo-input :focus{
+    outline: none;
+    border: 2px solid #0981D1;
+}
+
+.add-btn{
+
+    margin-left: 1rem;
+    background-color: #1e3f5a;
+    color: #e1edbf;
+    border-radius: 50%;
+    border: 2px solid #e1edbf;
+    font-size: 1.5rem;
+    width:  3.2rem;
+    height: 3.2rem;
+    cursor: pointer;
+    box-shadow: 2px 4px 10px #271c6c;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-btn:focus
+{
+    outline: none;
+}
+
+.displaytodos {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.displaytodos .buttons {
+    margin-bottom: 2rem;
+}
+
+.displaytodos .buttons button {
+    padding:  0.5rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.displaytodos .buttons button :focus {
+    outline: none;
+}
+
+.displaytodos .buttons button:not(:last-child){
+    margin-right: 1rem;
+}
+
+.displaytodos ul {
+    list-style: none;
+    display: flex;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    margin-left: 5%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #e1edbf;
+    background: radial-gradient(
+        circle,
+        hsla(237, 34%, 78%, 8.9) 8%,
+        hsla(219, 88%, 94%, 8.9) 100%,
+    );
+    margin: 0 1rem 1rem 0;
+    height: 8rem;
+    width: 18rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+    position: relative;
+}
+
+.card textarea {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #e1edbf;
+
+    color: #1e3f5a;
+    height: 70%;
+    font: optional;
+    font-size: 1.6rem;
+}
+
+.card textarea:disabled {
+    background-color: transparent;
+}
+
+.card .btns{
+    position:absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.card .btns button {
+    border-radius: 20%;
+    border: none;
+    margin: 0 0.6rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #1e3f5a;
+    background-color: transparent;
+}
+
+.card .btns button:focus {
+    outline: none;
+}
+
+.completed {
+    position: absolute;
+    right: 0.3rem;
+    top: 0.3rem;
+    background-color: rgba(127, 255, 212, 0.377);
+    border: 2px solid #1e3f5a;
+    color: #222;
+    text-transform: capitalize;
+
+    font-size: 0.8rem;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
