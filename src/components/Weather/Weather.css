@@ -1,6 +1,6 @@
 .weather {
     display: flex;
-    width: 7rem;
+    width: 25rem;
     border-radius: 16px;
     box-shadow: 10px -2px 20px 2px rgb(0, 0, 0/ 50%);
     color: #fff;
@@ -9,32 +9,26 @@
     margin: 0.3% 5% 0 auto;
     padding: 2.5% 3.5%;
     justify-content: center;
+    flex-direction: row;
 }
 
 .top-right {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
 }
 
-.temperature{
-    display: flex;
-    justify-content: center;
+.temperature {
     font-weight: 600;
     font-size: 1.4em;
-    width: auto;
-    margin: 5%;
-}
-.vent{
-    display: flex;
-    justify-content: center;
-    font-weight: 300;
-    font-size: 1.3em;
-    width: auto;
-    margin: 5%;
-    text-align: center;
+    margin: 0 1rem;
 }
 
+.vent {
+    font-weight: 300;
+    font-size: 1.3em;
+    margin: 0 1rem;
+}
 
 .weather-icon {
     font-size: 2rem;
@@ -42,11 +36,7 @@
 }
 
 .weather-description {
-    display: flex;
-    justify-content: center;
     font-size: 1.4rem;
     font-weight: bold;
     text-transform: capitalize;
 }
-
-

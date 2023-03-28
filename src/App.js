@@ -20,6 +20,7 @@ function App() {
       </motion.h1>
       <Quote />
       <Todos />
+      <h1>To Do</h1> 
       <DisplayTodos />
     </div>
   );

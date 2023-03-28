@@ -52,14 +52,14 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 2rem;
+    margin: 1rem;
     color: #e1edbf;
     text-shadow: 0 0 5px #1e3f5a, 3px -1px 5px #271c6c
 }
 .App h1 {
     display: table-header-group;
     text-align: center;
-    margin: 2rem;
+    margin: 1rem;
     color: #e1edbf;
     
     text-shadow: 0 0 5px #1e3f5a, 3px -1px 5px #271c6c
